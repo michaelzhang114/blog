@@ -1,19 +1,21 @@
 ---
-title: "A Gentle Introduction to Deep Learning"
+title: "Introduction to Deep Learning"
 date: 2019-12-09T22:40:19-05:00
-draft: false
+draft: true
 tags: [dl]
 ---
 
-# Read this if you have:
+## Read this if you have:
+------
 - Basic computer programming knowledge
 - Want to know what the hype is behind 'deep learning'
 
-# Fundamentals
+## Fundamentals
+------
 
-## DL vs. ML vs. AI
+### DL vs. ML vs. AI
 
-*AI*
+**AI**
 
 To begin to understand deep learning, we must understand the difference between deep learning (DL), machine learning (ML), and artifical intelligence (AI).
 
@@ -34,15 +36,15 @@ if (mainCharacter.isWalkingLeft()) {
 
 The enemy character moves left if the main character is moving left, moves right if the main character is moving right, and doesn't move otherwise. It's not very sophisticated, but it is a basic realization of AI.
 
-*ML*
+**ML**
 
 Stats
 
-*DL*
+**DL**
 
 Deep learning is machine learning on steroids. 
 
-## Learning types
+### Learning types
 
 #### Supervised learning
 Supervised learning is classification. A supervised learning model maps input to output data using provided input-output pairs.
@@ -75,7 +77,8 @@ Reinforcement learning is decision-making. A reinforcement learning model automa
   - Decision-making
   - `f(state, action)` -> `value`
 
-# What is Deep Learning?
+## What is Deep Learning?
+------
 
 p34 of all slides showing how deep learning surpasses machine learning
 
