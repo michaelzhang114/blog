@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dl on mzmb</title>
+    <link>https://infallible-hopper-5a1197.netlify.com/tags/dl/</link>
+    <description>Recent content in dl on mzmb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Dec 2019 22:40:19 -0500</lastBuildDate>
+    
+	<atom:link href="https://infallible-hopper-5a1197.netlify.com/tags/dl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Gentle Introduction to Deep Learning</title>
+      <link>https://infallible-hopper-5a1197.netlify.com/posts/gentle-introduction-to-deep-learning/</link>
+      <pubDate>Mon, 09 Dec 2019 22:40:19 -0500</pubDate>
+      
+      <guid>https://infallible-hopper-5a1197.netlify.com/posts/gentle-introduction-to-deep-learning/</guid>
+      <description>Read this if you have:  Basic computer programming knowledge Want to know what the hype is behind &amp;lsquo;deep learning&amp;rsquo;  Fundamentals DL vs. ML vs. AI AI
+To begin to understand deep learning, we must understand the difference between deep learning (DL), machine learning (ML), and artifical intelligence (AI).
+Let&#39;s address artifical intelligence first. AI is intelligent behavior exhibited by computer programs. It can be as simple as using if statements.</description>
+    </item>
+    
+  </channel>
+</rss>

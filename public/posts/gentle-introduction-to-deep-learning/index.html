@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>A Gentle Introduction to Deep Learning - mzmb</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="A Gentle Introduction to Deep Learning" />
+<meta property="og:description" content="Read this if you have:  Basic computer programming knowledge Want to know what the hype is behind &lsquo;deep learning&rsquo;  Fundamentals DL vs. ML vs. AI AI
+To begin to understand deep learning, we must understand the difference between deep learning (DL), machine learning (ML), and artifical intelligence (AI).
+Let&#39;s address artifical intelligence first. AI is intelligent behavior exhibited by computer programs. It can be as simple as using if statements." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://infallible-hopper-5a1197.netlify.com/posts/gentle-introduction-to-deep-learning/" />
+<meta property="article:published_time" content="2019-12-09T22:40:19-05:00" />
+<meta property="article:modified_time" content="2019-12-09T22:40:19-05:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Gentle Introduction to Deep Learning"/>
+<meta name="twitter:description" content="Read this if you have:  Basic computer programming knowledge Want to know what the hype is behind &lsquo;deep learning&rsquo;  Fundamentals DL vs. ML vs. AI AI
+To begin to understand deep learning, we must understand the difference between deep learning (DL), machine learning (ML), and artifical intelligence (AI).
+Let&#39;s address artifical intelligence first. AI is intelligent behavior exhibited by computer programs. It can be as simple as using if statements."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://infallible-hopper-5a1197.netlify.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://infallible-hopper-5a1197.netlify.com/css/main.css" />
+
+	
+		<script src="https://infallible-hopper-5a1197.netlify.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://infallible-hopper-5a1197.netlify.com/">
+				<img src="img/ppic.png" alt="mzmb" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://infallible-hopper-5a1197.netlify.com/">mzmb</a></h1>
+	<div class="site-description"><p>a blog</p><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">09</span>
+							<span class="rest">Dec 2019</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">A Gentle Introduction to Deep Learning</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="read-this-if-you-have">Read this if you have:</h1>
+<ul>
+<li>Basic computer programming knowledge</li>
+<li>Want to know what the hype is behind &lsquo;deep learning&rsquo;</li>
+</ul>
+<h1 id="fundamentals">Fundamentals</h1>
+<h2 id="dl-vs-ml-vs-ai">DL vs. ML vs. AI</h2>
+<p><em>AI</em></p>
+<p>To begin to understand deep learning, we must understand the difference between deep learning (DL), machine learning (ML), and artifical intelligence (AI).</p>
+<p>Let's address artifical intelligence first. AI is intelligent behavior exhibited by computer programs. It can be as simple as using <code>if</code> statements. Take a look at the following code:</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">var mainCharacter <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> MainCharacter<span style="color:#666">(</span><span style="color:#666">)</span><span style="color:#666">;</span>
+var enemy <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Enemy<span style="color:#666">(</span><span style="color:#666">)</span><span style="color:#666">;</span>
+
+<span style="color:#007020;font-weight:bold">if</span> <span style="color:#666">(</span>mainCharacter<span style="color:#666">.</span><span style="color:#4070a0">isWalkingLeft</span><span style="color:#666">(</span><span style="color:#666">)</span><span style="color:#666">)</span> <span style="color:#666">{</span>
+    enemy<span style="color:#666">.</span><span style="color:#4070a0">moveLeft</span><span style="color:#666">(</span><span style="color:#666">)</span>
+<span style="color:#666">}</span> <span style="color:#007020;font-weight:bold">else</span> <span style="color:#007020;font-weight:bold">if</span> <span style="color:#666">(</span>mainCharacter<span style="color:#666">.</span><span style="color:#4070a0">isWalkingLeft</span><span style="color:#666">(</span><span style="color:#666">)</span><span style="color:#666">)</span> <span style="color:#666">{</span>
+    enemy<span style="color:#666">.</span><span style="color:#4070a0">moveRight</span><span style="color:#666">(</span><span style="color:#666">)</span>
+<span style="color:#666">}</span> <span style="color:#007020;font-weight:bold">else</span> <span style="color:#666">{</span>
+    enemy<span style="color:#666">.</span><span style="color:#4070a0">stayPut</span><span style="color:#666">(</span><span style="color:#666">)</span>
+<span style="color:#666">}</span>
+</code></pre></div><p>The enemy character moves left if the main character is moving left, moves right if the main character is moving right, and doesn't move otherwise. It's not very sophisticated, but it is a basic realization of AI.</p>
+<p><em>ML</em></p>
+<p>Stats</p>
+<p><em>DL</em></p>
+<p>Deep learning is machine learning on steroids.</p>
+<h2 id="learning-types">Learning types</h2>
+<h4 id="supervised-learning">Supervised learning</h4>
+<p>Supervised learning is classification. A supervised learning model maps input to output data using provided input-output pairs.</p>
+<p>ex. Take a set of emails, some are spam, and some are not (assume we know this for sure). Then, we can generate the following input-output pairs:</p>
+<ul>
+<li><code>email1</code> -&gt; <code>spam</code></li>
+<li><code>email2</code> -&gt; <code>not spam</code></li>
+<li><code>email3</code> -&gt; <code>not spam</code></li>
+<li><code>email4</code> -&gt; <code>not spam</code></li>
+<li><code>email5</code> -&gt; <code>spam</code></li>
+</ul>
+<p>We give these input-output pairs for the model to learn so when we show the model a new email, say <code>email6</code>, then it would output either <code>spam</code> or <code>not spam</code>. New emails are <em>classified</em> into categories.</p>
+<h4 id="unsupervised-learning">Unsupervised learning</h4>
+<p>Unsupervised learning is reconstruction. An unsupervised learning model learns from no results. We provide the model with inputs without the labels so the model can develop a learning pattern and come up with its own classification.</p>
+<h4 id="reinforcement-learning">Reinforcement learning</h4>
+<p>Reinforcement learning is decision-making. A reinforcement learning model automatically determines the ideal behavior within a specific context to maximize results. It's like training a dog. If a dog sits when you tell it to sit, you award it a treat. Over time, the dog learns that sitting when told is desirable because it gets rewarded. Through this reward system, the dog learns a new action.</p>
+<h4 id="summary-of-learning-types">Summary of learning types</h4>
+<ul>
+<li>
+<p>Supervised learning:</p>
+<ul>
+<li>Classification</li>
+<li><code>f(input)</code> -&gt; <code>target</code></li>
+</ul>
+</li>
+<li>
+<p>Unsupervised learning:</p>
+<ul>
+<li>Reconstruction</li>
+<li><code>f(input)</code> -&gt; <code>likelihood</code></li>
+</ul>
+</li>
+<li>
+<p>Reinforcement learning:</p>
+<ul>
+<li>Decision-making</li>
+<li><code>f(state, action)</code> -&gt; <code>value</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="what-is-deep-learning">What is Deep Learning?</h1>
+<p>p34 of all slides showing how deep learning surpasses machine learning</p>
+<p>Deep Learning is a class of machine learning algorithms that uses multiple layers to progressively extract higher level features from raw input.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/dl">dl</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+</body>
+</html>

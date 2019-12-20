@@ -44,7 +44,8 @@ pygmentsStyle = "friendly"
 	subtitle = "a blog"
 
 	# Optional 64x64 avatar image.
-	avatar = "img/pic.png"
+	# use / before img!! ugh
+	avatar = "/img/ppic.png"
     
     #mode = "auto" # "dark" or "auto"
 	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
@@ -66,3 +67,6 @@ weight = 2
 name = "Tags"
 url = "/tags"
 weight = 3
+
+[taxonomies]
+   tag = "tags"
