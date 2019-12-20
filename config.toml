@@ -1,0 +1,68 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "mzmb"
+theme = "hugo-ink"
+# enableEmoji   = true
+
+# https://gohugo.io/content-management/syntax-highlighting/
+pygmentsUseClassic            = false
+pygmentsCodeFences            = true
+pygmentsCodeFencesGuessSyntax = true
+# https://help.farbox.com/pygments.html
+# https://github.com/alecthomas/chroma
+# hugo gen chromastyles --style=autumn        >  syntax.autumn.css
+# ...
+#pygmentsUseClasses            = true
+# => static/css/syntax/syntax/syntax.*.css
+# copy one of them to
+# static/css/syntax/syntax.css
+# alternative (if shortcodes/csc*.html are not used):
+# set pygmentsUseClassic to false on choose one of the following:
+#pygmentsStyle = "autumn"
+#pygmentsStyle = "borland"
+#pygmentsStyle = "bw"
+#pygmentsStyle = "colorful"
+#pygmentsStyle = "default"
+#pygmentsStyle = "emacs"
+pygmentsStyle = "friendly"
+#pygmentsStyle = "fruity"
+#pygmentsStyle = "manni"
+#pygmentsStyle = "monokai"
+#pygmentsStyle = "murphy"
+#pygmentsStyle = "native"
+#pygmentsStyle = "pastie"
+#pygmentsStyle = "perldoc"
+#pygmentsStyle = "rrt"
+#pygmentsStyle = "tango"
+#pygmentsStyle = "trac"
+#pygmentsStyle = "vim"
+#pygmentsStyle = "vs"
+
+
+
+[params]
+	subtitle = "a blog"
+
+	# Optional 64x64 avatar image.
+	avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+    
+    #mode = "auto" # "dark" or "auto"
+	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+	# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
+
+# Nav.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
