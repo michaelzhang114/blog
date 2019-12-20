@@ -44,7 +44,7 @@ pygmentsStyle = "friendly"
 	subtitle = "a blog"
 
 	# Optional 64x64 avatar image.
-	avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+	avatar = "img/pic.png"
     
     #mode = "auto" # "dark" or "auto"
 	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
