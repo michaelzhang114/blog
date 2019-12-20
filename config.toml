@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://infallible-hopper-5a1197.netlify.com/"
 languageCode = "en-us"
 title = "mzmb"
 theme = "hugo-ink"
